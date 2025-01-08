@@ -1,0 +1,7 @@
+.security {
+    grid-column: 4/ span 12; /* Nội dung chiếm 12 cột */
+    margin: 46px 20px 46px 20px; /* Margin 20px xung quanh nội dung */
+    background-color: #ffffff;
+    overflow-y: auto; /* Cuộn khi nội dung dài */
+    box-sizing: border-box; /* Tính cả padding vào chiều rộng */
+  }

@@ -1,0 +1,59 @@
+/* Menu chiếm 3 cột */
+.menu {
+    position: fixed; /* Cố định menu khi cuộn */
+    left: 0; /* Đảm bảo menu nằm ở phía trái màn hình */
+    width: 20%; /* Chiếm 3 cột trong tổng 15 cột */
+    height: 100vh;
+    padding: 1.25em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* Bóng đổ */
+    z-index: 1000; /* Đảm bảo menu luôn nằm trên cùng */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+  }
+
+.title {
+  margin-left: 0;
+  padding: 0.3125em;
+}
+
+.header {
+  width: 100%;
+  display: inline-flex;
+}
+
+.user-icon {
+  margin-right: auto;
+  color: var(--light-brown);
+  margin-right:3.49%;
+}
+
+.hello {
+  margin-left: -30%;
+  color: var(--light-brown);
+}
+
+.bell-icon {
+  margin-left: auto;
+  display: inline-flex;
+  padding-left: 2.8125em;
+  color: var(--bold-brown);
+  padding-top: 0.3125em;
+}
+
+.menubar li {
+  margin-right: auto;
+  display: flex;
+  list-style: none;
+  padding-bottom:3em;
+  gap: 1.5em;
+  color: var(--light-brown);
+
+  
+}
+
+.menubar {
+  padding:  1.5em 0 0 0;
+}
+
+.menubar li.active a {
+  color: var(--primary-color); /* Màu khi active */
+}

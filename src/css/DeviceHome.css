@@ -1,0 +1,98 @@
+.device-home {
+    padding: 1.5em 0;
+    height: 38em;
+    grid-column: span 3;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 1.25em;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  
+  .tab-button {
+    flex: 1;
+    padding: 0.5em;
+    margin: 0 0.25em;
+    border: none;
+    background-color: #f3f3f3;
+    color: #333;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .tab-button.active {
+    background-color: var(--light-brown);
+    color: white;
+    font-weight: bold;
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 200%; /* Gấp đôi chiều rộng vì có hai slide */
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider.slide-left {
+    transform: translateX(-50%);
+  }
+  
+  .light,
+  .fan {
+    width: 50%;
+    height: 100%;
+ 
+    box-sizing: border-box;
+  }
+  
+  .light {
+    background: linear-gradient(to bottom, #BCA997 0%, #BCA997 80%, #FFFFFF 100%);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .fan {
+    background: linear-gradient(to bottom, #938C79 0%, #D1CCBC 72%, #FFFFFF 100%);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .light-control, .fan-control {
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: auto;
+    width: 100%;
+    height: 9em;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .light-content, .fan-content {
+    padding: 1.25em;
+    display: flex;
+    justify-content: space-between;
+  }

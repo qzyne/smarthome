@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  gap: 0.9375em; 
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-color: #413302; 
+  --light-brown: #b3aa99; 
+  --bold-brown: #7e7666; 
+  --grey: #DBDBDB; 
+  --green: #49CD51; 
+  --red: #E4493B;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.h1-bold {
+  font-size: 2em;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.h1-regular {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.h2-bold {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.h2-regular {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+.h3-bold {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.h3-regular {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.body0-bold {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.body0-regular {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.body1-bold {
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+.body1-regular {
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+.body2-bold {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.body2-regular {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.body3-bold {
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+.body3-regular {
+  font-size: 0.875em;
+  font-weight: 400;
+}
+.note {
+  font-size: 0.75em;
+}
+
+
+a {
+  gap: 1.5em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--light-brown);
+  text-decoration: none; 
 }
 
-.App-link {
-  color: #61dafb;
+a:hover {
+  color: var(--primary-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:active {
+  color: var(--primary-color);
 }
