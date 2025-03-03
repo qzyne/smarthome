@@ -1,0 +1,72 @@
+/* Định dạng chung cho nút toggle */
+.toggle-button {
+    width: 3.875em; /* Tăng kích thước của nút */
+    height: 1.875em;
+    background-color: #ffffff; /* Màu nền của nút */
+    border-radius: 3.125em;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+    justify-content: space-between; /* Đẩy văn bản và nút tròn về hai phía */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 0 10px; /* Thêm padding 2 bên */
+    transition: background-color 0.3s ease; 
+  }
+  
+  /* Khi trạng thái bật */
+  .toggle-button.on {
+    background-color: #2A9E8E; /* Màu nền khi bật */
+  }
+  
+  /* Khi trạng thái tắt */
+  .toggle-button.off {
+    background-color:var(--light-brown); /* Màu nền khi tắt */
+  }
+  
+  /* Định dạng cho nút tròn bên trong */
+  .toggle-circle {
+    position: absolute;
+    top: 50%;
+    left: 0.3125em;
+    transform: translateY(-50%);
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Bóng đổ */
+    transition: left 0.3s ease; 
+  }
+  
+  /* Khi trạng thái bật, nút tròn di chuyển sang phải */
+  .toggle-circle.on {
+    left: 2.375em; /* Di chuyển nút tròn sang bên phải */
+  }
+  
+  /* Khi trạng thái tắt, nút tròn ở bên trái */
+  .toggle-circle.off {
+    left: 0.25em; /* Di chuyển nút tròn sang bên trái */
+  }
+  
+  /* Định dạng cho text trong nút */
+  .toggle-text {
+    color: white;
+    font-size:  0.875em;
+    transition: opacity 0.3s ease; /* Hiệu ứng chuyển độ mờ */
+    position: absolute;
+    left: 0.625em; /* Đặt văn bản vào vị trí bên trái của button */
+    pointer-events: none; /* Không cho phép tương tác với văn bản */
+  }
+  
+  /* Khi bật, ẩn text "Tắt" và hiển thị "Bật" */
+  .toggle-text.on {
+    color: #34E5CC;
+    left: 0.625em; /* Dịch chuyển văn bản sang phải */
+  }
+  
+  /* Khi tắt, ẩn text "Bật" và hiển thị "Tắt" */
+  .toggle-text.off {
+    color: #FCFCFC;
+    right: -0.625em; /* Dịch chuyển văn bản sang trái */
+  }

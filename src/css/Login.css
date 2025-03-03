@@ -1,0 +1,114 @@
+/* Import font Itim */
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+/* Toàn bộ trang login */
+.login {
+  background-color: #fef4e1; /* Màu nền vàng */
+  width: 100vw; /* Chiều rộng toàn màn hình */
+  height: 100vh; /* Chiều cao toàn màn hình */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex; /* Flexbox để căn layout */
+  justify-content: space-between; /* Căn giữa hai bên */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 0 160px; /* Cách trái và phải 160px */
+}
+
+/* Cột chứa form login */
+.login-content {
+  display: flex;
+  flex-direction: column; /* Dọc xuống */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+}
+
+/* Tiêu đề "SMART HOME" */
+.login-title {
+  color: #766e5e;
+  font-family: "Itim", cursive;
+}
+
+/* Form đăng nhập */
+.login-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em; /* Khoảng cách giữa các input */
+  width: 320px; /* Độ rộng form */
+}
+
+/* Nhãn (label) cho input */
+label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #413302;
+}
+
+/* Input nhập liệu - trạng thái bình thường */
+#username,
+#password {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #eee0c5; /* Màu nền */
+  border: none; /* Không có border */
+  border-radius: 5px; /* Bo góc 5px */
+  outline: none; /* Loại bỏ viền mặc định */
+  opacity: 0.9; /* Độ mờ 25% */
+}
+
+/* Input focus (khi click vào) */
+#username:focus,
+#password:focus {
+  border: 2px solid #b9af9a; /* Viền 2px */
+  background-color: white;
+}
+
+/* Nút đăng nhập */
+.login-button {
+  padding: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #5e9e96;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover button */
+.login-button:hover {
+  background-color: #2b7e87;
+}
+
+/* Hình ảnh login bên phải */
+.login-image {
+  max-height: 60%; /* Đảm bảo hình không quá lớn */
+  object-fit: contain; /* Giữ tỉ lệ hình */
+}
+/* Container bọc input password */
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Input trong password container */
+.password-container input {
+  width: 100%;
+  padding-right: 40px; /* Để chừa chỗ cho icon */
+}
+
+/* Icon con mắt */
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #413302; /* Màu icon */
+  font-size: 22px; /* Kích thước icon */
+}
+
+/* Hover icon */
+.password-toggle:hover {
+  color: #7e7666; /* Đổi màu khi hover */
+}

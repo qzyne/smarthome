@@ -1,0 +1,132 @@
+.regions {
+    height: 100vh;
+    grid-column: 4/ span 12; /* Nội dung chiếm 12 cột */
+    padding: 1.25em; /* Margin 20px xung quanh nội dung */
+    background-color: #ffffff;
+    overflow-y: auto; /* Cuộn khi nội dung dài */
+    box-sizing: border-box; /* Tính cả padding vào chiều rộng */
+  }
+
+  .button-icon {
+    margin-left: 0.5em;
+  }
+  .add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.6875em;
+    height: 2.4375em;
+    background-color: #fff;
+    border: 1px solid var(--bold-brown);
+    border-radius: 8px;
+  }
+  
+  .addRegion {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1.25em;
+  }
+  
+  .add-button:hover {
+    background-color: var(--bold-brown);
+    cursor: pointer;
+  }
+  
+  .add-button .button-text, .add-button .button-icon {
+    color: var(--bold-brown);
+  }
+  
+  .add-button:hover .button-text, .add-button:hover .button-icon {
+    color: #fff;
+  }
+  
+  .form-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 10;
+  }
+  
+  .add-region-form {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    width: 400px;
+  }
+  
+  .add-region-form h3 { margin-bottom: 1em; font-size: 1.5em; }
+  .add-region-form label {
+    display: block; margin-bottom: 1em; font-size: 1em;
+  }
+  
+  .add-region-form input, .add-region-form select {
+    width: 100%; padding: 0.5em; margin-top: 0.5em;
+    border: 1px solid #ccc; border-radius: 0.5em;
+    font-size: 1em;
+  }
+  
+  .form-buttons {
+    display: flex; justify-content: space-between; margin-top: 1em;
+  }
+  
+  .form-buttons button {
+    padding: 0.5em 1em; border: none; border-radius: 0.5em;
+    cursor: pointer; font-size: 1em;
+  }
+  
+  .form-buttons button:first-child {
+    background-color: var(--light-brown); color: #fff;
+  }
+  
+  .form-buttons button:last-child {
+    background-color: #f3f3f3; color: #333;
+  }
+  
+  .form-buttons button:hover:first-child { background-color: var(--bold-brown); }
+  .form-buttons button:hover:last-child { background-color: #e0e0e0; }
+  
+  .region-table {
+    width: 100%; border-collapse: collapse; margin-top: 1.25em;
+  }
+  
+  .region-table th, .region-table td {
+    padding: 0.75em; text-align: center; border: 1px solid #ccc;
+  }
+  
+  .region-table th {
+    background-color: #f4f4f4;
+    border: 1px solid var(--light-brown);
+  }
+  
+  .region-table td button {
+    padding: 0.5em;
+    color: var(--bold-brown);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  /* Hover cho Pencil */
+  .region-table td button:hover .icon-pencil {
+    color: #77BEE4; /* Màu xanh cho Pencil */
+  }
+  
+  /* Hover cho Trash */
+  .region-table td button:hover .icon-trash {
+    color: #ff1a1a; /* Màu đỏ cho Trash */
+  }
+  
+  
+  .view-more-link {
+    justify-content: center;
+    color: var(--primary-color);
+    text-decoration: underline; /* Loại bỏ gạch chân mặc định */
+  }
+  
+  .view-more-link:hover {
+    color: var(--bold-brown); /* Màu nâu đậm khi hover */
+  }

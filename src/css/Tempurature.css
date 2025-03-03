@@ -1,0 +1,104 @@
+.tempurature {
+    height: 31.44em;
+    background: linear-gradient(to bottom, #dbe4fa, #FFF5E0);
+    grid-column: span 3;
+    box-sizing: border-box;
+    border-radius: 1.25em;
+    padding: 1.5em 0;
+
+  }
+
+  .title {
+    text-align: center;
+    color: var(--primary-color);
+    
+  }
+
+  .temp { 
+    text-align: center;
+    box-shadow: 0px 0px 0.9375em 0.25em #FFE7B8;
+    margin-top: 5.125vh;
+    margin-inline: auto;
+    align-items: center;
+    border-radius: 50%;
+    height:  13.125em;  
+    width: 13.3125em;
+    background: linear-gradient(to bottom, #FFFFFF, #FFDFA4);
+  }
+
+  .t1 {
+    margin-bottom: 0.75em;
+    color: var(--bold-brown);
+  }
+
+  .t2 {
+    margin-bottom: 0.24em;
+    color: var(--primary-color);
+    font-size: 3.4375em;
+  }
+
+  .sun-icon {
+    color: var(--bold-brown);
+  }
+
+  .content {
+    padding-top: 2.375em;
+  }
+
+  .humidity {
+    color: var(--bold-brown);
+    text-align: left;
+    margin-left: 1.25em;
+  }
+
+  .percent {
+    margin-right: 1.25em;
+    text-align: right;
+
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: space-between; /* Đẩy các phần tử ra hai đầu */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 100%; /* Đảm bảo div chiếm đủ chiều rộng */
+  }
+
+  .humidity-bar {
+    margin-top: 1em;
+    margin-inline: auto;
+    background-color: var(--grey); /* Màu nền của thanh đo */
+    border-radius: 0.625em;
+    overflow: hidden;
+    height: 1.25em;
+    max-width: 100%; 
+    min-width: 2.5em; 
+    width: calc(100% - 2.5em);
+    position: relative;
+  }
+  
+  .humidity-fill {
+    height: 100%;
+    background-color: #77BEE4; /* Màu thanh đo */
+    /* transition: width 0.3s ease;  */
+  }
+
+
+  .humidity-circle {
+    position: relative;
+    top: 50%; /* Căn giữa theo chiều dọc */
+    transform: translateY(-730%); /* Căn giữa chính xác theo chiều dọc */
+    width: 1.5625em; /* Đường kính của nút tròn */
+    height: 1.5625em;
+    border: 5px solid #77BEE4;
+    background-color: #ffffff; /* Màu nút tròn */
+    border-radius: 50%; /* Làm cho nó tròn */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Bóng đổ */
+}
+
+.motor {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 1.25em;
+}

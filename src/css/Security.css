@@ -1,0 +1,72 @@
+/* Security.css */
+.security {
+  height: 100vh;
+  grid-column: 4 / span 12;
+  padding: 1.25em;
+  background-color: #fff;
+  overflow-y: auto;
+  position: relative;
+}
+
+.h1-bold {
+  text-align: left;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.face-id-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.face-id-image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 5em;
+}
+
+.upload-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.upload-label {
+  margin-right: 10px;
+  width: 250px;
+  display: inline-block;
+  text-align: left;
+}
+
+.setup-faceid-button {
+  display: block;
+  margin: 4em auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(223, 22, 22);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.setup-faceid-button:hover {
+  background-color: #45a049;
+}
+
+label {
+  cursor: pointer;
+}
+#nameData,
+#upload-face {
+  width: 360px;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #eee0c5; /* Màu nền */
+  border: none; /* Không có border */
+  border-radius: 5px; /* Bo góc 5px */
+  outline: none; /* Loại bỏ viền mặc định */
+  opacity: 0.9; /* Độ mờ 25% */
+  /* height: 30px; */
+}
